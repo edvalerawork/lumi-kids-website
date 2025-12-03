@@ -33,7 +33,7 @@ function getYoutubeThumbnail(id) {
 // RENDERIZAR LAS TARJETAS DEL VIDEO
 function cargar(edad) {
 
-    title.textContent = `Videos para ${edad.replace("-", "–")} años`;
+    title.textContent = `Videos para ${edad.replace("-", " - ")} años`;
     subtitle.textContent = "Contenido especialmente seleccionado para este rango de edad";
 
     const lista = videos[edad];

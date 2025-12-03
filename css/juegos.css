@@ -9,7 +9,7 @@ body.juegos{
 =========================== */
 .juegos-top {
     text-align: center;
-    padding: 40px 20px 20px;
+    padding: 40px 20px 15px;
 }
 
 .juegos-icono {
@@ -34,15 +34,16 @@ body.juegos{
 
 .juegos-titulo {
     font-size: 45px;
-    margin-top: 15px;
     font-weight: 800;
+    margin-top: 15px;
     color: #14a14a;
 }
 
 .juegos-sub {
     font-size: 20px;
-    color: #374151;
     margin-top: 5px;
+    color: #374151;
+    
 }
 
 /* ===========================
@@ -184,4 +185,28 @@ CARDS DE JUEGOS
     border-radius: 10px;
     cursor: pointer;
     z-index: 10;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 820px) {
+
+    .juegos-cards {
+        grid-template-columns: 1fr !important;
+        padding: 0 20px 40px; 
+    }
+
+    .juego-card {
+        width: 100%;
+        max-width: 420px; 
+        margin: 0 auto; 
+    }
+
+    .juego-card-top {
+        padding: 30px; 
+    }
+
+    .juego-card-body {
+        padding: 25px 20px; 
+    }
 }

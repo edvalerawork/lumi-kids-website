@@ -9,7 +9,7 @@ body.videos {
 
 .video-top {
     text-align: center;
-    padding: 50px 20px 15px;
+    padding: 40px 20px 15px;
 }
 
 .video-icono {
@@ -33,17 +33,15 @@ body.videos {
 }
 
 .video-titulo {
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 45px;
+    font-weight: 800;
     margin-top: 15px;
-    background: linear-gradient(to right, #2094ff, #0062ff);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #0062ff;
 }
 
 .video-sub {
     font-size: 20px;
-    margin-top: 8px;
+    margin-top: 5px;
     color: #374151;
 }
 
@@ -302,6 +300,22 @@ body.videos {
         font-size: 16px;
         border-radius: 30px;
     }
+    
+    .video-age-title,
+    .video-age-sub {
+        padding-left: 0 !important;
+        text-align: center;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 20px 60px !important;
+    }
+
+    .video-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
     .modal-contenido iframe {
         height: 300px;
     }
@@ -317,5 +331,6 @@ body.videos {
         height: 30px;
         font-size: 16px;
     }
+    
 }
 
