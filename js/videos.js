@@ -90,7 +90,8 @@ function abrirVideo(youtubeId) {
 
     modal.classList.add("activo");
 
-    iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1`;
+    iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=1`;
+    
 }
 
 function cerrarVideo() {
