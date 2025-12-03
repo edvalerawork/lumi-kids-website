@@ -1,0 +1,347 @@
+body.index{
+    background: linear-gradient(to bottom right, #eef3fd, #f7effa, #fdf4f5);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+    text-align: center;
+    padding: 10px 20px 8px;
+}
+
+.lumi-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* Centra horizontal */
+    align-items: center;       /* Centra vertical (si tiene altura) */
+    margin-top: 20px;          /* Ajusta si quieres separarlo */
+}
+
+.logo2-img {
+    width: 150px;
+    height: auto;
+    display: block;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+/* Animación suave arriba-abajo */
+@keyframes flotar {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-12px); }  /* Qué tan arriba sube */
+    100% { transform: translateY(0); }
+}
+
+/* TITULO */
+.hero-title {
+    font-size: 50px;
+    margin-top: 25px;
+    font-weight: 900;
+}
+
+.hero-title span {
+    background: linear-gradient(to right, #f85616, #ea469a, #ba3cc5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #444;
+    margin-top: 8px;
+}
+
+/* ---------------- CARDS ---------------- */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-cards {
+    margin-top: 60px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Card base */
+.hero-card {
+    width: 420px;
+    padding: 40px 30px;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Efecto hover en la card */
+.hero-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 18px 28px rgba(0,0,0,0.15);
+}
+
+/* Colores */
+.verde {
+    background: linear-gradient(to bottom right, #46dc80, #14bb80);
+}
+
+.azul {
+    background: linear-gradient(to bottom right, #58a7f6, #0cb4d6);
+}
+
+/* Iconos circulares */
+.hero-card-icon {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    color: #22c55e;
+
+    /* Activamos animación cuando la card hace hover */
+    transition: transform 0.25s ease;
+}
+
+/* Azul cambia el color del icono */
+.azul .hero-card-icon {
+    color: #58a7f6;
+}
+
+.hero-card:hover .hero-card-icon {
+    animation: reboteVideo 1.3s ease-out infinite;
+}
+
+@keyframes reboteVideo {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    /* Caída fuerte */
+    30% {
+        transform: translateY(8px);
+    }
+
+    /* Rebote principal (alto) */
+    55% {
+        transform: translateY(-17px);
+    }
+
+    /* Segunda caída (más suave) */
+    70% {
+        transform: translateY(13px);
+    }
+
+    /* Seg. rebote pequeño */
+    85% {
+        transform: translateY(-9px);
+    }
+
+    /* Vuelve al centro */
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+.hero-card h2 {
+    margin-bottom: 8px;
+}
+
+/* Estrellitas */
+.stars i {
+    color: #fce146;
+    margin: 0 3px;
+    font-size: 20px;
+}
+/* ================================
+   SECCIÓN ¿QUÉ PUEDES HACER?
+=================================*/
+
+.lumi-section {
+    width: 90%;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.10);
+}
+
+.lumi-section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.icono-titulo i {
+    font-size: 30px;
+    color: #facc15;
+}
+
+/* GRID DE CARDS */
+.lumi-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.lumi-card {
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.lumi-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ICONO */
+.lumi-card-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+}
+
+/* ICONO SIEMPRE BLANCO */
+.lumi-card-icon i {
+    color: white !important;
+}
+/*  Círculo card JUGAR */
+.circulo-juega {
+    background: #f472b6;
+}
+
+/* Círculo card APRENDE */
+.circulo-aprende {
+    background: #facd15; 
+}
+
+/* Círculo card CRECE */
+.circulo-crece {
+    background: #60a4fa; 
+}
+
+/* COLORES */
+.pink-card {
+    background: #f8d7ef;
+}
+
+.yellow-card {
+    background: #fef3b9;
+}
+
+.blue-card {
+    background: #d6eaff;
+}
+
+/* TEXTOS */
+.lumi-card h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.lumi-card p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #444;
+}
+
+/* Contenedor centrado */
+.aventura-contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 80px;
+}
+
+/* Animación */
+@keyframes botonBrilla {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 10px 25px rgba(249, 115, 22, 0.35);
+    }
+    50% {
+        transform: scale(1.06);
+        box-shadow: 0 16px 32px rgba(249, 115, 22, 0.45);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 10px 25px rgba(249, 115, 22, 0.35);
+    }
+}
+
+/* Botón animado sin cambio de cursor */
+.btn-aventura {
+    background: linear-gradient(to right, #facc15, #f97316);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 40px;
+
+    animation: botonBrilla 2s infinite ease-in-out;
+
+    /* Cursor NO cambia */
+    cursor: default;
+}
+
+/* =========================================== */
+/*                RESPONSIVO                   */
+/* =========================================== */
+
+
+@media (max-width: 820px) {
+
+    .header-monedas {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+    .hero-title {
+        font-size: 36px;
+    }
+    .hero-card {
+        width: 90%;
+    }
+    .lumi-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .lumi-section-title {
+        font-size: 26px;
+        flex-direction: column;
+        text-align: center;
+    }
+}

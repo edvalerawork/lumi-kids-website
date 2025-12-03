@@ -1,0 +1,146 @@
+.header {
+    width: 100%;
+    background: white;
+    border-bottom: 4px solid #facc15;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-contenedor {
+    max-width: 1200px;
+    margin: auto;
+    padding: 14px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ---------------- LOGO ----------------- */
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-texto {
+    font-size: 26px;
+    font-weight: 900;
+    background: linear-gradient(to right, #f5a843, #db590e);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* ---------------- MENÚ ----------------- */
+
+.header-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-btn {
+    padding: 10px 20px;
+    background: #9ca3af;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    transition: .25s;
+}
+
+.menu-btn i {
+    font-size: 18px;
+}
+
+.menu-btn:hover {
+    background: #6b7280;
+}
+
+.menu-btn.activo {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.menu-btn[data-page="inicio"].activo {
+    background: linear-gradient(to bottom, #facc15, #fb923c);
+}
+
+.menu-btn[data-page="juegos"].activo {
+    background: linear-gradient(to bottom, #4ade80, #16a34a);
+}
+.menu-btn[data-page="videos"].activo {
+    background: linear-gradient(to bottom, #60a5fa, #3b82f6);
+}
+
+/* ---------------- MONEDA ----------------- */
+
+.header-monedas {
+    background: linear-gradient(to right, #facc15, #f59e0b);
+    padding: 8px 16px;
+    border-radius: 40px;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(245,158,11,0.5);
+}
+
+.header-monedas i {
+    font-size: 17px;
+}
+
+
+
+
+
+
+/* =========================================== */
+/*                RESPONSIVO                   */
+/* =========================================== */
+
+
+@media (max-width: 820px) {
+
+    .header-contenedor {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .logo-texto {
+        font-size: 22px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    
+}
