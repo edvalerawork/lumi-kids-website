@@ -2,7 +2,7 @@
     width: 100%;
     background: white;
     border-bottom: 4px solid #facc15;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 
-/* ---------------- LOGO ----------------- */
+/* LOGO */
 
 .logo-img {
     width: 45px;
@@ -41,7 +41,7 @@
     color: transparent;
 }
 
-/* ---------------- MENÚ ----------------- */
+/* MENÚ */
 
 .header-menu {
     display: flex;
@@ -73,8 +73,9 @@
 
 .menu-btn.activo {
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 .menu-btn[data-page="inicio"].activo {
     background: linear-gradient(to bottom, #facc15, #fb923c);
 }
@@ -82,11 +83,12 @@
 .menu-btn[data-page="juegos"].activo {
     background: linear-gradient(to bottom, #4ade80, #16a34a);
 }
+
 .menu-btn[data-page="videos"].activo {
     background: linear-gradient(to bottom, #60a5fa, #3b82f6);
 }
 
-/* ---------------- MONEDA ----------------- */
+/* MONEDA */
 
 .header-monedas {
     background: linear-gradient(to right, #facc15, #f59e0b);
@@ -98,7 +100,7 @@
     align-items: center;
     gap: 6px;
     font-size: 16px;
-    box-shadow: 0 0 10px rgba(245,158,11,0.5);
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
 }
 
 .header-monedas i {
@@ -130,7 +132,7 @@
 }
 
 .lumi-footer a {
-    color: #333231; 
+    color: #333231;
     text-decoration: none;
     transition: 0.2s ease;
 }
@@ -154,7 +156,6 @@
 
 
 /*                RESPONSIVO                   */
-/* =========================================== */
 
 
 @media (max-width: 820px) {
@@ -183,10 +184,11 @@
         width: 40px;
         height: 40px;
     }
+
     .header-monedas {
         padding: 6px 14px;
         font-size: 14px;
     }
 
-    
+
 }

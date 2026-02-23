@@ -1,166 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LUMI - Juegos</title>
-    <link rel="icon" href="img/Lumi.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/juegos.css">
-</head>
-<body class="juegos">
-
+    <link rel="icon" href="img/Lumi.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/juegos.css" />
+  </head>
+  <body class="juegos">
     <!-- HEADER -->
     <header class="header">
-        <div class="header-contenedor">
-            <div class="header-logo">
-                <img src="img/Lumi.ico" alt="LUMI" class="logo-img">
-                <span class="logo-texto">LUMI</span>
-            </div>
-            <nav class="header-menu">
-                <button class="menu-btn" data-page="inicio" onclick="window.location.href='index.html'">
-                    <i class="bi bi-house-door-fill"></i>
-                    Inicio
-                </button>
-
-                <button class="menu-btn activo" data-page="juegos" onclick="window.location.href='juegos.html'">
-                    <i class="bi bi-controller"></i>
-                    Juegos
-                </button>
-
-                <button class="menu-btn" data-page="videos" onclick="window.location.href='videos.html'">
-                    <i class="bi bi-camera-reels-fill"></i>
-                    Videos
-                </button>
-            </nav>
-            <div class="header-monedas">
-                <i class="bi bi-coin"></i>
-                <span id="contadorMonedas">0</span>
-            </div>
-
+      <div class="header-contenedor">
+        <div class="header-logo">
+          <img src="img/Lumi.ico" alt="LUMI" class="logo-img" />
+          <span class="logo-texto">LUMI</span>
         </div>
+        <nav class="header-menu">
+          <button
+            class="menu-btn"
+            data-page="inicio"
+            onclick="window.location.href = 'index.html'"
+          >
+            <i class="bi bi-house-door-fill"></i>
+            Inicio
+          </button>
+
+          <button
+            class="menu-btn activo"
+            data-page="juegos"
+            onclick="window.location.href = 'juegos.html'"
+          >
+            <i class="bi bi-controller"></i>
+            Juegos
+          </button>
+
+          <button
+            class="menu-btn"
+            data-page="videos"
+            onclick="window.location.href = 'videos.html'"
+          >
+            <i class="bi bi-camera-reels-fill"></i>
+            Videos
+          </button>
+        </nav>
+        <div class="header-monedas">
+          <i class="bi bi-coin"></i>
+          <span id="contadorMonedas">0</span>
+        </div>
+      </div>
     </header>
 
-<!-- SECCIÓN ZONA DE JUEGOS -->
+    <!-- SECCIÓN ZONA DE JUEGOS -->
     <section class="juegos-top">
+      <!-- Icono animado -->
+      <div class="juegos-icono">
+        <i class="bi bi-trophy-fill"></i>
+      </div>
 
-        <!-- Icono animado -->
-        <div class="juegos-icono">
-            <i class="bi bi-trophy-fill"></i>
-        </div>
-
-        <h1 class="juegos-titulo">¡Zona de Juegos!</h1>
-        <p class="juegos-sub">Elige un juego y aprende mientras te diviertes</p>
+      <h1 class="juegos-titulo">¡Zona de Juegos!</h1>
+      <p class="juegos-sub">Elige un juego y aprende mientras te diviertes</p>
     </section>
 
     <!-- TARJETAS DE JUEGOS -->
     <section class="juegos-cards">
-
-        <!-- Card 1 -->
-        <div class="juego-card">
-            <div class="juego-card-top">
-                <div class="juego-icono"><i class="bi bi-coin"></i></div>
-                <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
-            </div>
-
-            <div class="juego-card-body">
-                <h2>Recolector de Monedas</h2>
-                <p>¡Atrapa las monedas y aprende a contar dinero!</p>
-
-                <div class="juego-info">
-                    <span class="edad">Edades 5-7</span>
-                    <span class="monedas"><i class="bi bi-coin"></i> 10</span>
-                </div>
-
-                <button class="jugar-btn" onclick="abrirJuego('https://games.crazygames.com/en_US/money-clicker/index.html')">
-    ¡Jugar Ahora!
-</button>
-
-            </div>
+      <!-- Card 1 -->
+      <div class="juego-card">
+        <div class="juego-card-top">
+          <div class="juego-icono"><i class="bi bi-coin"></i></div>
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
         </div>
 
-        <!-- Card 2 -->
-        <div class="juego-card">
-            <div class="juego-card-top">
-                <div class="juego-icono"><i class="bi bi-piggy-bank-fill"></i></div>
-                <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
-            </div>
+        <div class="juego-card-body">
+          <h2>Recolector de Monedas</h2>
+          <p>¡Atrapa las monedas y aprende a contar dinero!</p>
 
-            <div class="juego-card-body">
-                <h2>Alcancía Feliz</h2>
-                <p>Ayuda al cerdito a guardar dinero para sus sueños</p>
+          <div class="juego-info">
+            <span class="edad">Edades 5-7</span>
+            <span class="monedas"><i class="bi bi-coin"></i> 10</span>
+          </div>
 
-                <div class="juego-info">
-                    <span class="edad">Edades 8-10</span>
-                    <span class="monedas"><i class="bi bi-coin"></i> 15</span>
-                </div>
+          <button
+            class="jugar-btn"
+            onclick="
+              abrirJuego('https://edvalerawork.github.io/piggy-save-game/')
+            "
+          >
+            ¡Jugar Ahora!
+          </button>
+        </div>
+      </div>
 
-                <button class="jugar-btn" onclick="abrirJuego('https://games.crazygames.com/game/money-tree-2-cash-grow-game/index.html')">
-    ¡Jugar Ahora!
-</button>
-
-            </div>
+      <!-- Card 2 -->
+      <div class="juego-card">
+        <div class="juego-card-top">
+          <div class="juego-icono"><i class="bi bi-piggy-bank-fill"></i></div>
+          <div class="stars">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="juego-card">
-            <div class="juego-card-top">
-                <div class="juego-icono"><i class="bi bi-bullseye"></i></div>
-                <div class="stars">
-                    <i class="bi bi-star-fill" style="color: rgba(252, 225, 70);"></i>
-                    <i class="bi bi-star-fill" style="color: rgba(252, 225, 70);"></i>
-                    <i class="bi bi-star-fill" style="color: rgba(252, 225, 70);"></i>
-                </div>
-            </div>
+        <div class="juego-card-body">
+          <h2>Alcancía Feliz</h2>
+          <p>Ayuda al cerdito a guardar dinero para sus sueños</p>
 
-            <div class="juego-card-body">
-                <h2>Emparejar Monedas</h2>
-                <p>Encuentra las parejas de monedas iguales</p>
+          <div class="juego-info">
+            <span class="edad">Edades 8-10</span>
+            <span class="monedas"><i class="bi bi-coin"></i> 15</span>
+          </div>
 
-                <div class="juego-info">
-                    <span class="edad">Edades 10-12</span>
-                    <span class="monedas"><i class="bi bi-coin"></i> 20</span>
-                </div>
+          <button
+            class="jugar-btn"
+            onclick="
+              abrirJuego('https://edvalerawork.github.io/piggy-save-game/')
+            "
+          >
+            ¡Jugar Ahora!
+          </button>
+        </div>
+      </div>
 
-                <button class="jugar-btn" onclick="abrirJuego('https://games.crazygames.com/game/bit-coin-clicker-yxi/index.html')">
-    ¡Jugar Ahora!
-</button>
-
-            </div>
+      <!-- Card 3 -->
+      <div class="juego-card">
+        <div class="juego-card-top">
+          <div class="juego-icono"><i class="bi bi-bullseye"></i></div>
+          <div class="stars">
+            <i class="bi bi-star-fill" style="color: rgba(252, 225, 70)"></i>
+            <i class="bi bi-star-fill" style="color: rgba(252, 225, 70)"></i>
+            <i class="bi bi-star-fill" style="color: rgba(252, 225, 70)"></i>
+          </div>
         </div>
 
+        <div class="juego-card-body">
+          <h2>Emparejar Monedas</h2>
+          <p>Encuentra las parejas de monedas iguales</p>
+
+          <div class="juego-info">
+            <span class="edad">Edades 10-12</span>
+            <span class="monedas"><i class="bi bi-coin"></i> 20</span>
+          </div>
+
+          <button
+            class="jugar-btn"
+            onclick="
+              abrirJuego('https://edvalerawork.github.io/piggy-save-game/')
+            "
+          >
+            ¡Jugar Ahora!
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- MODAL PARA JUEGOS -->
     <div id="modalJuego" class="juego-modal">
-        <div class="juego-modal-contenido">
-            <button class="juego-cerrar" onclick="cerrarJuego()">✖</button>
-            <iframe id="juegoIframe" src="" frameborder="0" allowfullscreen></iframe>
-        </div>
+      <div class="juego-modal-contenido">
+        <button class="juego-cerrar" onclick="cerrarJuego()">✖</button>
+        <iframe
+          id="juegoIframe"
+          src=""
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
 
     <footer class="lumi-footer">
-        <p>Desarrollado por 
-            <a href="https://edvalerawork.github.io/portafolio-ed/" target="_blank">
-                <strong>EdValera</strong>
-            </a>
-        </p>
+      <p>
+        Desarrollado por
+        <a href="https://edvalerawork.github.io/PortafolioWeb/" target="_blank">
+          <strong>EdValera</strong>
+        </a>
+      </p>
 
-        <div class="footer-social">
-            <a href="https://github.com/edvalerawork" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/edvalera/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        </div>
+      <div class="footer-social">
+        <a href="https://github.com/edvalerawork" target="_blank"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/edvalera/" target="_blank"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
     </footer>
-    
+
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>

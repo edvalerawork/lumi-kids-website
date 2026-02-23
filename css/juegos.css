@@ -1,12 +1,10 @@
-body.juegos{
+body.juegos {
     background: linear-gradient(to bottom, #e8fff1, #d6ffec);
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
 }
 
-/* ===========================
-    SECCIÓN SUPERIOR
-=========================== */
+/* SECCIÓN SUPERIOR */
 .juegos-top {
     text-align: center;
     padding: 40px 20px 15px;
@@ -24,12 +22,19 @@ body.juegos{
     justify-content: center;
     font-size: 48px;
     animation: flotar 3s infinite ease-in-out;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes flotar {
-    0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
 }
 
 .juegos-titulo {
@@ -43,12 +48,10 @@ body.juegos{
     font-size: 20px;
     margin-top: 5px;
     color: #374151;
-    
+
 }
 
-/* ===========================
-CARDS DE JUEGOS
-=========================== */
+/* CARDS DE JUEGOS */
 .juegos-cards {
     margin-top: 20px;
     display: grid;
@@ -60,14 +63,14 @@ CARDS DE JUEGOS
 .juego-card {
     background: white;
     border-radius: 25px;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .juego-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
 }
 
 /* TOP COLOR DEGRADADO */
@@ -86,9 +89,17 @@ CARDS DE JUEGOS
 }
 
 @keyframes rebote {
-    0% { transform: translateY(0); }
-    60% { transform: translateY(10px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* CUERPO */
@@ -142,7 +153,7 @@ CARDS DE JUEGOS
     transform: scale(1.05);
 }
 
-/* =============== MODAL DE JUEGOS =============== */
+/* MODAL DE JUEGOS */
 .juego-modal {
     display: none;
     position: fixed;
@@ -150,7 +161,7 @@ CARDS DE JUEGOS
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6);
     backdrop-filter: blur(4px);
     z-index: 9999;
     justify-content: center;
@@ -165,7 +176,7 @@ CARDS DE JUEGOS
     border-radius: 18px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
 }
 
 .juego-modal iframe {
@@ -193,20 +204,20 @@ CARDS DE JUEGOS
 
     .juegos-cards {
         grid-template-columns: 1fr !important;
-        padding: 0 20px 40px; 
+        padding: 0 20px 40px;
     }
 
     .juego-card {
         width: 100%;
-        max-width: 420px; 
-        margin: 0 auto; 
+        max-width: 420px;
+        margin: 0 auto;
     }
 
     .juego-card-top {
-        padding: 30px; 
+        padding: 30px;
     }
 
     .juego-card-body {
-        padding: 25px 20px; 
+        padding: 25px 20px;
     }
 }

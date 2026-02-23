@@ -1,166 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LUMI - Inicio</title>
-    <link rel="icon" href="img/Lumi.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/inicio.css">
-</head>
-<body class="index">
-
+    <link rel="icon" href="img/Lumi.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/inicio.css" />
+  </head>
+  <body class="index">
     <!-- HEADER -->
     <header class="header">
-        <div class="header-contenedor">
-            <div class="header-logo">
-                <img src="img/Lumi.ico" alt="LUMI" class="logo-img">
-                <span class="logo-texto">LUMI</span>
-            </div>
-            <nav class="header-menu">
-                <button class="menu-btn activo" data-page="inicio" onclick="window.location.href='index.html'">
-                    <i class="bi bi-house-door-fill"></i>
-                    Inicio
-                </button>
-
-                <button class="menu-btn" data-page="juegos" onclick="window.location.href='juegos.html'">
-                    <i class="bi bi-controller"></i>
-                    Juegos
-                </button>
-
-                <button class="menu-btn" data-page="videos" onclick="window.location.href='videos.html'">
-                    <i class="bi bi-camera-reels-fill"></i>
-                    Videos
-                </button>
-            </nav>
-            <div class="header-monedas">
-                <i class="bi bi-coin"></i>
-                <span id="contadorMonedas">0</span>
-            </div>
+      <div class="header-contenedor">
+        <div class="header-logo">
+          <img src="img/Lumi.ico" alt="LUMI" class="logo-img" />
+          <span class="logo-texto">LUMI</span>
         </div>
+        <nav class="header-menu">
+          <button
+            class="menu-btn activo"
+            data-page="inicio"
+            onclick="window.location.href = 'index.html'"
+          >
+            <i class="bi bi-house-door-fill"></i>
+            Inicio
+          </button>
+
+          <button
+            class="menu-btn"
+            data-page="juegos"
+            onclick="window.location.href = 'juegos.html'"
+          >
+            <i class="bi bi-controller"></i>
+            Juegos
+          </button>
+
+          <button
+            class="menu-btn"
+            data-page="videos"
+            onclick="window.location.href = 'videos.html'"
+          >
+            <i class="bi bi-camera-reels-fill"></i>
+            Videos
+          </button>
+        </nav>
+        <div class="header-monedas">
+          <i class="bi bi-coin"></i>
+          <span id="contadorMonedas">0</span>
+        </div>
+      </div>
     </header>
 
     <!-- CONTENIDO INICIO -->
 
     <section class="hero">
-        <div class="lumi-img">
-            <img src="img/Lumi.ico" alt="LUMI" class="logo2-img">
-        </div>
+      <div class="lumi-img">
+        <img src="img/Lumi.ico" alt="LUMI" class="logo2-img" />
+      </div>
 
-        <h1 class="hero-title">
-            <span>¡Bienvenido a LUMI!</span>
-        </h1>
+      <h1 class="hero-title">
+        <span>¡Bienvenido a LUMI!</span>
+      </h1>
 
-        <p class="hero-subtitle">
-            ¡Aprende sobre dinero de forma divertida! 💰
-        </p>
+      <p class="hero-subtitle">¡Aprende sobre dinero de forma divertida! 💰</p>
 
-        <p class="hero-text">
-            Juega, aprende y gana monedas mientras descubres el mundo del dinero
-        </p>
+      <p class="hero-text">
+        Juega, aprende y gana monedas mientras descubres el mundo del dinero
+      </p>
 
-        <!-- TARJETAS PRINCIPALES -->
-        <div class="hero-cards">
-
-            <!-- Card JUGAR -->
-            <a href="juegos.html" class="card-link">
-            <div class="hero-card verde">
-                <div class="hero-card-icon">
-                    <i class="bi bi-controller"></i>
-                </div>
-
-                <h2>¡Jugar!</h2>
-                <p>Diviértete con juegos sobre dinero, ahorro y más</p>
-
-                <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
+      <!-- TARJETAS PRINCIPALES -->
+      <div class="hero-cards">
+        <!-- Card JUGAR -->
+        <a href="juegos.html" class="card-link">
+          <div class="hero-card verde">
+            <div class="hero-card-icon">
+              <i class="bi bi-controller"></i>
             </div>
-            </a>
-            <!-- Card VIDEOS -->
-            <a href="videos.html" class="card-link">
-            <div class="hero-card azul">
-                <div class="hero-card-icon">
-                    <i class="bi bi-camera-video-fill"></i>
-                </div>
 
-                <h2>¡Ver Videos!</h2>
-                <p>Aprende con videos divertidos para tu edad</p>
+            <h2>¡Jugar!</h2>
+            <p>Diviértete con juegos sobre dinero, ahorro y más</p>
 
-                <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
             </div>
-            </a>
-        </div>
+          </div>
+        </a>
+        <!-- Card VIDEOS -->
+        <a href="videos.html" class="card-link">
+          <div class="hero-card azul">
+            <div class="hero-card-icon">
+              <i class="bi bi-camera-video-fill"></i>
+            </div>
+
+            <h2>¡Ver Videos!</h2>
+            <p>Aprende con videos divertidos para tu edad</p>
+
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
 
-<!-- SECCIÓN: ¿Qué puedes hacer en LUMI? -->
+    <!-- SECCIÓN: ¿Qué puedes hacer en LUMI? -->
     <section class="lumi-section">
+      <h2 class="lumi-section-title">
+        <span class="icono-titulo">
+          <i class="bi bi-trophy-fill"></i>
+        </span>
+        ¿Qué puedes hacer en LUMI?
+      </h2>
 
-        <h2 class="lumi-section-title">
-            <span class="icono-titulo">
-                <i class="bi bi-trophy-fill"></i>
-            </span>
-            ¿Qué puedes hacer en LUMI?
-        </h2>
-
-        <div class="lumi-cards">
-
-            <!-- Card 1 -->
-            <div class="lumi-card pink-card">
-                <div class="lumi-card-icon circulo-juega">
-                    <i class="bi bi-rocket-takeoff-fill"></i>
-                </div>
-                <h3>Juega</h3>
-                <p>Completa misiones y gana monedas</p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="lumi-card yellow-card">
-                <div class="lumi-card-icon circulo-aprende">
-                    <i class="bi bi-star-fill"></i>
-                </div>
-                <h3>Aprende</h3>
-                <p>Descubre cómo funciona el dinero</p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="lumi-card blue-card">
-                <div class="lumi-card-icon circulo-crece">
-                    <i class="bi bi-trophy"></i>
-                </div>
-                <h3>Crece</h3>
-                <p>Conviértete en un experto financiero</p>
-            </div>
-
+      <div class="lumi-cards">
+        <!-- Card 1 -->
+        <div class="lumi-card pink-card">
+          <div class="lumi-card-icon circulo-juega">
+            <i class="bi bi-rocket-takeoff-fill"></i>
+          </div>
+          <h3>Juega</h3>
+          <p>Completa misiones y gana monedas</p>
         </div>
+
+        <!-- Card 2 -->
+        <div class="lumi-card yellow-card">
+          <div class="lumi-card-icon circulo-aprende">
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <h3>Aprende</h3>
+          <p>Descubre cómo funciona el dinero</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="lumi-card blue-card">
+          <div class="lumi-card-icon circulo-crece">
+            <i class="bi bi-trophy"></i>
+          </div>
+          <h3>Crece</h3>
+          <p>Conviértete en un experto financiero</p>
+        </div>
+      </div>
     </section>
 
     <div class="aventura-contenedor">
-        <button class="btn-aventura">
-            ¡Comienza tu aventura ahora!
-        </button>
+      <button class="btn-aventura">¡Comienza tu aventura ahora!</button>
     </div>
 
     <footer class="lumi-footer">
-        <p>Desarrollado por 
-            <a href="https://edvalerawork.github.io/portafolio-ed/" target="_blank">
-                <strong>EdValera</strong>
-            </a>
-        </p>
+      <p>
+        Desarrollado por
+        <a href="https://edvalerawork.github.io/PortafolioWeb/" target="_blank">
+          <strong>EdValera</strong>
+        </a>
+      </p>
 
-        <div class="footer-social">
-            <a href="https://github.com/edvalerawork" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/edvalera/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        </div>
+      <div class="footer-social">
+        <a href="https://github.com/edvalerawork" target="_blank"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/edvalera/" target="_blank"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
